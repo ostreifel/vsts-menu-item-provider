@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "vsts-menu-item-provider",
-    "version": "0.1.25",
+    "version": "0.1.29",
     "name": "Sample Menu Items",
     "scopes": [ "vso.work", "vso.work_write" ],
     "description": "Sample extension for dynamic context menu items.",
@@ -52,7 +52,7 @@
             "type": "ms.vss-web.action-provider",
             "description": "",
             "targets": [
-                "ms.vss-work-web.work-item-context-menu"
+                "ms.vss-work-web.work-item-context-menu", "ms.vss-work-web.work-item-form"
             ],
             "properties": {
                 "group": "contributed",
