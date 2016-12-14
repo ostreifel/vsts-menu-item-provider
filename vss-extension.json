@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "vsts-menu-item-provider",
-    "version": "0.1.21",
+    "version": "0.1.25",
     "name": "Sample Menu Items",
     "scopes": [ "vso.work", "vso.work_write" ],
     "description": "Sample extension for dynamic context menu items.",
