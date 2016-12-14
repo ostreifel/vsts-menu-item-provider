@@ -1,11 +1,11 @@
 {
     "manifestVersion": 1,
-    "id": "vsts-extension-ts-seed-simple",
-    "version": "0.1.1",
-    "name": "vsts-extension-ts-seed-simple",
+    "id": "vsts-menu-item-provider",
+    "version": "0.1.10",
+    "name": "Sample Menu Items",
     "scopes": [ "vso.work", "vso.work_write" ],
     "description": "Describe your extension.",
-    "publisher": "your-publisher",
+    "publisher": "ottostreifel",
     "icons": {
         "default": "img/logo.png"
     },

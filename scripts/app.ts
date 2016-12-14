@@ -1,22 +1,20 @@
-import { MessageHelper } from "./logic/messageHelper";
-
-var actionProvider =  {
-    getMenuItems: (context) => {
-        return [<IContributedMenuItem>{
-            title: "Work Item Menu Action",
-            action: (actionContext) => {
-                let workItemId = actionContext.id
-                    || (actionContext.ids && actionContext.ids.length > 0 && actionContext.ids[0])
-                    || (actionContext.workItemIds && actionContext.workItemIds.length > 0 && actionContext.workItemIds[0]);
-                    
-                if (workItemId) {
-                    let messageHelper = new MessageHelper();
-                    alert(messageHelper.format([workItemId]));
-                }
-            }
+let i = 0;
+const menuContributionHandler: IContributedMenuSource = {
+    getMenuItems: function (context): (IContributedMenuItem & {dynamic?: boolean})[] {
+        function myAction(actionContext) {
+            alert("Action called");
+        }
+        return [{
+            title: "Menu Items Group",
+            text: "Menu Items Group",
+            // icon: "img/icon.png",
+            childItems: [{
+                title: `Menu item Name 1, called ${i++} times`,
+                action: myAction
+            }],
+            dynamic: true
         }];
     }
 };
 
-// Register context menu action provider
-VSS.register(VSS.getContribution().id, actionProvider);
+VSS.register(VSS.getContribution().id, menuContributionHandler);
