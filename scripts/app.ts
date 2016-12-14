@@ -23,7 +23,7 @@ function getMenuItems(): IPromise<IContributedMenuItem & { dynamic?: boolean }[]
         return service.getFieldValue("System.Title").then(val => {
             const menuItems = [{
                 title: "Menu Items Group",
-                text: `Menu item Name 1, generated ${++callCount} times`,
+                text: `Dynamic menu item, generated ${++callCount} times`,
                 disabled: val !== "Enabled",
                 action: context => alert("executing my action"),
                 // icon: "img/icon.png",
