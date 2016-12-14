@@ -1,3 +1,7 @@
+### Menu Item Provider ###
+
+Sample extension showing dynamic context menu items on the work item form.
+
 ### Structure ###
 
 ```

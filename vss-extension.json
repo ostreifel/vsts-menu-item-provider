@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
     "id": "vsts-menu-item-provider",
-    "version": "0.1.10",
+    "version": "0.1.21",
     "name": "Sample Menu Items",
     "scopes": [ "vso.work", "vso.work_write" ],
-    "description": "Describe your extension.",
+    "description": "Sample extension for dynamic context menu items.",
     "publisher": "ottostreifel",
     "icons": {
         "default": "img/logo.png"
@@ -15,31 +15,14 @@
         }
     ],
     "tags": [
-        "Sample"
+        "Sample",
+        "Work Items",
+        "Menus",
+        "Dynamic"
     ],
     "content": {
         "details": {
             "path": "details.md"
-        }
-    },
-    "links": {
-        "home": {
-            "uri": "https://bit.ly"
-        },
-        "getstarted": {
-            "uri": "https://bit.ly"
-        },
-        "learn": {
-            "uri": "https://bit.ly"
-        },
-        "support": {
-            "uri": "https://bit.ly"
-        },
-        "repository": {
-            "uri": "https://bit.ly"
-        },
-        "issues": {
-            "uri": "https://bit.ly"
         }
     },
     "branding": {

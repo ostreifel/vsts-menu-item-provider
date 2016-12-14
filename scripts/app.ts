@@ -1,17 +1,13 @@
-let i = 0;
+let callCount = 0;
+
+// will be recomputed each time the work item changes
 const menuContributionHandler: IContributedMenuSource = {
     getMenuItems: function (context): (IContributedMenuItem & {dynamic?: boolean})[] {
-        function myAction(actionContext) {
-            alert("Action called");
-        }
+        // could be a promise instead
         return [{
             title: "Menu Items Group",
-            text: "Menu Items Group",
+            text: `Menu item Name 1, generated ${++callCount} times`,
             // icon: "img/icon.png",
-            childItems: [{
-                title: `Menu item Name 1, called ${i++} times`,
-                action: myAction
-            }],
             dynamic: true
         }];
     }

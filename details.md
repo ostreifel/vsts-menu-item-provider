@@ -1,3 +1,6 @@
 # Sample Menu Items Extension #
 
-Describe your extension here. This description will be shown in the marketplace. You can use *Markdown*.
+Sample extension showing dynamic context menu item on the work item form.
+
+
+Check out the source on [Github](https://github.com/ostreifel/vsts-menu-item-provider)
